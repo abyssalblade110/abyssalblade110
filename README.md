@@ -29,10 +29,32 @@ The challenges are interactive and will test your **coding**, **hacking**, and *
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AbyssalBlade110 Challenge</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .challenge-container {
+        margin-bottom: 20px;
+      }
+      .result {
+        margin-top: 10px;
+        color: green;
+        font-weight: bold;
+      }
+      .incorrect {
+        margin-top: 10px;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <h1>Welcome to the AbyssalBlade110 Interactive Game</h1>
-    <button onclick="startChallenge()">Start Challenge</button>
+    <div class="challenge-container">
+      <button onclick="startChallenge()">Start Challenge</button>
+      <div id="result"></div>
+    </div>
 
     <script>
       // Function to start the challenge
@@ -64,11 +86,12 @@ The challenges are interactive and will test your **coding**, **hacking**, and *
         const answer = prompt(
           "Reverse the following code. What will be the output?\n\nfunction checkCode(secret) { const hash = [97, 119, 123, 120, 115]; const chars = secret.split(''); let result = 0; for (let i = 0; i < chars.length; i++) { result += chars[i].charCodeAt(0); } if (result === hash.reduce((a, b) => a + b, 0)) { return 'Correct!'; } return 'Wrong!'; }\n\nSecret: 'Abyssal'"
         );
+        const resultDiv = document.getElementById('result');
         if (answer.toLowerCase() === "correct!") {
-          alert("You solved it! Unlocking your projects and skills...");
+          resultDiv.innerHTML = "🎉 You solved it! Unlocking your projects and skills...";
           showProjectsAndSkills();
         } else {
-          alert("Wrong answer! Try again.");
+          resultDiv.innerHTML = "<span class='incorrect'>❌ Incorrect answer! Try again.</span>";
         }
       }
 
@@ -77,11 +100,12 @@ The challenges are interactive and will test your **coding**, **hacking**, and *
         const answer = prompt(
           "You need to exploit a SQL injection vulnerability. What would be your payload?\n\nCode: 'SELECT * FROM users WHERE username = '$username' AND password = '$password';'"
         );
-        if (answer.toLowerCase() === "' OR '1'='1' --") {
-          alert("You exploited it successfully! Unlocking your projects and skills...");
+        const resultDiv = document.getElementById('result');
+        if (answer.toLowerCase() === "' or '1'='1' --") {
+          resultDiv.innerHTML = "🎉 You exploited it successfully! Unlocking your projects and skills...";
           showProjectsAndSkills();
         } else {
-          alert("Wrong payload! Try again.");
+          resultDiv.innerHTML = "<span class='incorrect'>❌ Incorrect payload! Try again.</span>";
         }
       }
 
@@ -90,11 +114,12 @@ The challenges are interactive and will test your **coding**, **hacking**, and *
         const answer = prompt(
           "Decrypt the base64 string: 'U29ycnksIGV4Y2VsbGVudCBmb3IgdGhlIGNvbW1lbnQsIGJ1dCBkaWQgdmlhIGJlIFRldGFyLCB3aG8gaXMgYnkgaW1wYXRpb24uIFNvcnJ5IQ=='"
         );
+        const resultDiv = document.getElementById('result');
         if (answer.toLowerCase() === "sorry, excellent for the comment, but did i miss something") {
-          alert("Great job! Unlocking your projects and skills...");
+          resultDiv.innerHTML = "🎉 Decryption successful! Unlocking your projects and skills...";
           showProjectsAndSkills();
         } else {
-          alert("Incorrect answer! Try again.");
+          resultDiv.innerHTML = "<span class='incorrect'>❌ Incorrect answer! Try again.</span>";
         }
       }
 
@@ -103,17 +128,40 @@ The challenges are interactive and will test your **coding**, **hacking**, and *
         const answer = prompt(
           "You’ve found a hidden flag in base64: 'U29ycnksIGV4Y2VsbGVudCBmb3IgdGhlIGNvbW1lbnQsIGJ1dCBkaWQgdmlhIGJlIFRldGFyLCB3aG8gaXMgYnkgaW1wYXRpb24uIFNvcnJ5IQ=='\nWhat is the flag?"
         );
+        const resultDiv = document.getElementById('result');
         if (answer.toLowerCase() === "sorry, excellent for the comment, but did i miss something") {
-          alert("CTF Solved! Unlocking your projects and skills...");
+          resultDiv.innerHTML = "🎉 CTF Solved! Unlocking your projects and skills...";
           showProjectsAndSkills();
         } else {
-          alert("Incorrect flag! Try again.");
+          resultDiv.innerHTML = "<span class='incorrect'>❌ Incorrect flag! Try again.</span>";
         }
       }
 
       // Unlock Projects and Skills
       function showProjectsAndSkills() {
-        alert("Here are your unlocked details:\n\n1. **Projects**:\n- Vidxtract (Video Downloader)\n- Hotr (Dating App)\n- Metamorphosis (Pen testing tool)\n\n2. **Skills**:\n- JavaScript, Python, SQL\n- Penetration Testing\n- Reverse Engineering\n- Cryptography\n\nGreat work!");
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML += `
+          <div class='result'>
+            🎉 Congratulations! Here are your unlocked details:
+            <ul>
+              <li><strong>Projects:</strong>
+                <ul>
+                  <li>Vidxtract (Video Downloader)</li>
+                  <li>Hotr (Dating App)</li>
+                  <li>Metamorphosis (Pen testing tool)</li>
+                </ul>
+              </li>
+              <li><strong>Skills:</strong>
+                <ul>
+                  <li>JavaScript, Python, SQL</li>
+                  <li>Penetration Testing</li>
+                  <li>Reverse Engineering</li>
+                  <li>Cryptography</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        `;
       }
     </script>
   </body>
