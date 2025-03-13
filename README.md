@@ -66,5 +66,4 @@ If you’re looking for a passionate developer to collaborate on interesting pro
 ✨ _Thanks for checking out my profile! I believe in learning by doing, and I’m always up for new challenges. Let’s build something amazing together!_ 🌟
 
 ---
-_This README is powered by **GitHub Readme Stats** & **GitHub Streak Stats**._  
-_Design inspired by creativity and fun!_ 🎨
+
