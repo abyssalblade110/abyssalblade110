@@ -1,115 +1,134 @@
-# 👋 Hello, I'm **AbyssalBlade110**!
+The AbyssalBlade110 Interactive Challenge 🚀
 
-Welcome to my GitHub profile! 🚀 I'm a software developer who loves to code, create, and collaborate on exciting projects. I'm constantly learning and evolving in the world of tech. Let’s dive into some cool categories that represent my style and the fun stuff I work on! 👇
+# 🎮 Welcome to the AbyssalBlade110 Interactive Challenge!
 
----
+Welcome, **brave adventurer**. You've entered the **AbyssalBlade110 realm**, where you'll have to **solve advanced programming and cybersecurity challenges** to **unlock information** about me and the technologies I work with.
 
-## 🎮 **Categories**  
-Here are some fun categories that describe my journey, style, and projects:
+Prepare yourself. This is no ordinary game. You'll need to leverage your **coding skills**, your **hacking knowledge**, and **problem-solving abilities** to win.
 
-### GitHub Actions 🤖
-Automating my workflows to make life easier and projects more efficient! 🚀  
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-%F0%9F%A4%96-green)
-
-### Game Mode 🚀
-I like to gamify things—code should be fun, right? 🎮  
-![Game Mode](https://img.shields.io/badge/Game%20Mode-%F0%9F%9A%80-blue)
-
-### Code Mode 👨🏽‍💻
-My default setting when I get into the zone and just focus on solving problems with clean code. 🧑‍💻  
-![Code Mode](https://img.shields.io/badge/Code%20Mode-%F0%9F%91%BB%F0%9F%8F%BD-orange)
-
-### Dynamic Realtime 💫
-Building applications that offer real-time interactions and updates. 💥  
-![Dynamic Realtime](https://img.shields.io/badge/Dynamic%20Realtime-%F0%9F%92%AB-purple)
-
-### A Little Bit of Everything 😃
-From full-stack development to solving quirky coding challenges, I love diving into different tech stacks. 💡  
-![A Little Bit of Everything](https://img.shields.io/badge/Everything-%F0%9F%98%83-yellow)
-
-### Descriptive 🗒
-I love clear and thorough documentation—because everyone loves understanding the "why" behind the code! ✍️  
-![Descriptive](https://img.shields.io/badge/Descriptive-%F0%9F%97%92-lightgray)
-
-### Simple but Innovative Ones 🤗
-Keeping it simple yet creative—sometimes the simplest things bring the most joy! ✨  
-![Simple Innovation](https://img.shields.io/badge/Simple%20Innovation-%F0%9F%91%8D-orange)
-
-### Typing.. Mode 🎰
-Caught in the moment, typing away, making things happen! ⌨️  
-![Typing Mode](https://img.shields.io/badge/Typing%20Mode-%F0%9F%8F%B0-purple)
-
-### Anime 👾
-Anime inspired me to think beyond code, blending creativity and tech. 🖤  
-![Anime](https://img.shields.io/badge/Anime-%F0%9F%91%9C-green)
-
-### Minimalistic ✨
-Less is more. I love creating clean, minimalistic designs that are easy to understand and beautiful.  
-![Minimalistic](https://img.shields.io/badge/Minimalistic-%F0%9F%8C%9F-teal)
-
-### GIFS 👻
-Because who doesn't love a good GIF to describe the mood?  
-![GIFS](https://img.shields.io/badge/GIFS-%F0%9F%91%BB-purple)
-
-### Just Images 🎭
-Sometimes, an image speaks louder than words. 📸  
-![Just Images](https://img.shields.io/badge/Images-%F0%9F%91%BD-yellow)
-
-### Badges 🎫
-Gotta add badges to keep things legit!  
-![Badges](https://img.shields.io/badge/Badges-%F0%9F%93%91-lightblue)
-
-### Fancy Fonts 🖋
-I like making things look pretty, with a little flair!  
-![Fancy Fonts](https://img.shields.io/badge/Fancy%20Fonts-%F0%9F%8F%81-pink)
-
-### Icons 🎯
-Beautiful icons make everything shine. 🌟  
-![Icons](https://img.shields.io/badge/Icons-%F0%9F%94%A5-red)
-
-### Retro 😎
-A little bit of old-school style never hurt anyone!  
-![Retro](https://img.shields.io/badge/Retro-%F0%9F%98%8E-blue)
+**Can you handle it? Let’s begin!**
 
 ---
 
-## 🧠 **Tech I'm diving into** 💻
-I’m always working with cutting-edge technologies and tools to create robust, scalable, and fun apps.
+## 🔐 Level 1: Reverse Engineering (Coding Challenge)
 
-- **Languages & Frameworks**:  
-  JavaScript, TypeScript, Python, Node.js, Vue.js, Laravel, Tailwind CSS, Bun, React.
+### 🧩 Task 1: Break the Code
 
-- **Tools & Services**:  
-  Git, GitHub Actions, Docker, PostgreSQL, MongoDB, Nginx, Apache, Gunicorn.
+You’ve encountered an encrypted message. Can you **decrypt it** using Python? Here’s the code:
+
+
+def decrypt_message(encrypted):
+    key = 5
+    decrypted = ''.join([chr(ord(c) - key) for c in encrypted])
+    return decrypted
+
+encrypted_message = "Jvsqj1m1"
+print(decrypt_message(encrypted_message))
+What will be the output when you decrypt the message?
+
+Hint: You’ll need to think about shift ciphers (Caesar cipher) here. Solve it, and you’ll unlock basic programming skills!
+
+⚙️ Level 2: SQL Injection (Cybersecurity Challenge)
+🔍 Task 2: Exploit the Vulnerability
+You're now facing a web application with a SQL injection vulnerability. The website accepts user input to log in, but there's a potential for exploitation.
+
+Here’s the login code in PHP:
+
+
+<?php
+$username = $_POST['username'];
+$password = $_POST['password'];
+$query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+$result = mysqli_query($conn, $query);
+?>
+Task:
+What would be the malicious payload you could use in the username field to bypass authentication?
+
+Hint: Think about SQL injection and single quotes. Solve it to unlock your cybersecurity expertise.
+
+🔐 Level 3: Cryptography (Advanced Challenge)
+🧠 Task 3: Encrypt and Decrypt
+You’ve come across a ciphered text. Can you use your Python skills to both encrypt and decrypt the message using the Vigenère cipher? Here's the encrypted message:
+
+
+Encrypted: Uv lqxx j ybt! Bz ql y jypnqc hyy.
+Task:
+Write a Python script to encrypt and decrypt the text using the Vigenère cipher. Use the keyword Abyssal and unlock cryptography skills.
+
+⚙️ Level 4: Reverse Engineering (Advanced Coding)
+💥 Task 4: Reversed Logic
+Can you reverse-engineer this code and identify what it actually does? Here’s the challenge:
+
+
+function checkCode(secret) {
+  const hash = [97, 119, 123, 120, 115];
+  const chars = secret.split('');
+  let result = 0;
+  
+  for (let i = 0; i < chars.length; i++) {
+    result += chars[i].charCodeAt(0);
+  }
+
+  if (result === hash.reduce((a, b) => a + b, 0)) {
+    return "Correct!";
+  }
+  return "Wrong!";
+}
+
+console.log(checkCode("Abyssal"));
+Task:
+What will the function output when you run it?
+
+Hint: You'll need to think about character encoding and string comparison.
+
+🔥 Level 5: OSINT (Open-Source Intelligence)
+🔍 Task 5: Investigate a Target
+Can you perform OSINT to gather publicly available information about a target? Here’s the challenge:
+
+Using Shodan, search for devices that expose the following vulnerabilities:
+
+CVE-2019-0708 (BlueKeep RDP vulnerability)
+CVE-2020-0601 (Windows CryptoAPI vulnerability)
+Task:
+List two real IPs that are vulnerable and explain how this vulnerability could be exploited. This will unlock your OSINT and ethical hacking skills.
+
+🏆 Level 6: Capture the Flag (CTF Challenge)
+🧩 Task 6: Find the Flag
+Your task is to retrieve a hidden flag. Here's a base64 encoded string:
+
+
+U29ycnksIGV4Y2VsbGVudCBmb3IgdGhlIGNvbW1lbnQsIGJ1dCBkaWQgdmlhIGJlIFRldGFyLCB3aG8gaXMgYnkgaW1wYXRpb24uIFNvcnJ5IQ==
+Task:
+What is the hidden message after decoding it? It’s related to your flag in a Capture The Flag (CTF) competition. Can you find the correct string and unlock your advanced skills?
+
+🏁 Congratulations! You've Unlocked It All! 🎉
+Congratulations, adventurer! You've successfully unlocked all levels, and now you can access all the cool info about AbyssalBlade110. You’re now ready to explore my projects, skills, and achievements:
+
+My Projects:
+Vidxtract - Free, ad-free video downloader.
+Hotr - Modern dating app.
+Metamorphosis - Pen testing tool for exploits like SQL injection, XSS, etc.
+Skills & Tech Stack:
+Languages: JavaScript, Python, TypeScript, Node.js, PHP
+Tools: Burp Suite, Kali Linux, Metasploit, Nmap, Wireshark, Git, Docker
+Frameworks: React.js, Node.js, Express.js, Laravel, TailwindCSS
+🎮 Bonus Round! Want to Play Again?
+I update the challenges regularly. Refresh the page and try to beat your previous score. The more you know, the better you’ll play.
+
+Good luck, and may the code be with you! ⚡
+
 
 ---
 
-## 🎯 **GitHub Stats**  
-Take a look at my GitHub activity and contributions:
+### **What makes this badass and professional:**
+1. **Cybersecurity and Programming Challenges**: The game uses real coding problems and cybersecurity scenarios. It's a practical test of skills!
+2. **Deeper Knowledge**: To unlock information, users need to solve complex coding and hacking challenges (SQL Injection, Reverse Engineering, CTF, Cryptography, etc.).
+3. **Advanced Interaction**: Rather than just answering basic questions, users need to **think critically** and use technical knowledge to reveal your info.
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=abyssalblade110&show_icons=true&count_private=true&theme=radical)
+This approach ensures that the **game** isn't just fun and interactive, but it also reflects your **advanced skills** in a **badass** way. Let me know if you want to adjust any specific level or task!
 
-## 📈 **Top Languages**  
-Curious about what I'm coding with? Here's a quick snapshot:
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=abyssalblade110&layout=compact&theme=radical)
 
-## 🔥 **GitHub Streak**  
-Check out my daily commitment streak!
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=abyssalblade110&theme=radical)
 
----
-
-## 💬 **Let’s Collaborate!**
-If you want to team up or discuss a project, reach out! I'm always open to new opportunities.
-
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
-- **Twitter**: [@YourTwitterHandle](https://twitter.com/yourtwitterhandle)
-- **Website**: [YourWebsite.com](https://yourwebsite.com)
-
----
-
-✨ _Thanks for visiting my profile! Let’s build something amazing together!_ 🌟  
 
