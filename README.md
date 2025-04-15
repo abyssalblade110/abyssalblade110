@@ -13,7 +13,7 @@
 
 - 🤝 I’m looking for help with **Cryptography**
 
-- 👨‍💻 All of my projects are available at [abyssalblade.com](pawndelta.netlify.app)
+- 👨‍💻 All of my projects are available at [pawndelta.netlify.app](pawndelta.netlify.app)
 
 - 💬 Ask me about **React and Vue.js for building dynamic web applications. GSAP (GreenSock Animation Platform) for creating smooth and powerful animations. The best practices in frontend development and UI/UX design.**
 
