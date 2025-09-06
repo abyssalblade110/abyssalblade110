@@ -17,7 +17,7 @@
 
 - 💬 Ask me about **React and Vue.js for building dynamic web applications. GSAP (GreenSock Animation Platform) for creating smooth and powerful animations. The best practices in frontend development and UI/UX design.**
 
-- 📫 How to reach me **Feel free to reach out via email at: abyssalblade110@proton.me**
+- 📫 How to reach me **Feel free to reach out via email at: abyssalblade111@proton.me**
 
 - ⚡ Fun fact **I have a passion for solving complex problems and enjoy creating innovative solutions, whether in development or through puzzles and challenges. In my free time, I explore new technologies and contribute to open-source projects.**
 
